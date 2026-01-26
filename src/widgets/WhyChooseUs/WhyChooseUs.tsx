@@ -47,7 +47,7 @@ export const WhyChooseUs = ({
         <Title>Преимущества</Title>
       </div>
       <Spacing size="xl" direction="vertical" />
-      <Typography color="accent" className="text-center text-2xl" variant="h2" id="advantages">
+      <Typography color="accent" className="text-center text-2xl" variant="h2">
         Почему стоит выбрать меня?
       </Typography>
       <Spacing size="xl" direction="vertical" />
