@@ -6,6 +6,7 @@ import { Spacing } from "@/shared/ui/Spacing";
 import { Icon } from "@/shared/ui/Icon/Icon";
 import { cn } from "@/shared/lib/utils";
 import Button from "@/shared/ui/Button/Button";
+import { FadeIn } from "@/shared/ui/FadeIn";
 
 const servicesStructuredData = {
     "@context": "https://schema.org",
@@ -97,41 +98,45 @@ const Services = ({ className }: ServicesProps) => {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesStructuredData) }}
             />
 
-            <div className="w-full flex justify-center">
-                <Title>Мои услуги</Title>
-            </div>
+            <FadeIn>
+                <div className="w-full flex justify-center">
+                    <Title>Мои услуги</Title>
+                </div>
+            </FadeIn>
 
             <Spacing size="2xl" direction="vertical" />
 
-            <div className="flex flex-col gap-4">
-                <header className="flex flex-col gap-2 text-center">
-                    <Typography
-                        variant="h1"
-                        className="text-accent text-2xl font-medium"
-                    >
-                        Профессиональные IT услуги
-                    </Typography>
-                    <Typography
-                        variant="h2"
-                        className="text-foreground text-lg font-normal"
-                    >
-                        Разработка ПО, создание веб-сайтов и техническое консультирование
-                        <br />
-                        <strong>Индивидуальный подход к каждому проекту</strong>
-                    </Typography>
-                </header>
-            </div>
+            <FadeIn delay={200}>
+                <div className="flex flex-col gap-4">
+                    <header className="flex flex-col gap-2 text-center">
+                        <Typography
+                            variant="h1"
+                            className="text-accent text-2xl font-medium"
+                        >
+                            Профессиональные IT услуги
+                        </Typography>
+                        <Typography
+                            variant="h2"
+                            className="text-foreground text-lg font-normal"
+                        >
+                            Разработка ПО, создание веб-сайтов и техническое консультирование
+                            <br />
+                            <strong>Индивидуальный подход к каждому проекту</strong>
+                        </Typography>
+                    </header>
+                </div>
+            </FadeIn>
 
             <Spacing size="2xl" direction="vertical" />
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {services.map((service) => (
-                    <div
-                        key={service.id}
-                        className="card w-full h-full rounded-4xl p-6 md:p-8 flex flex-col gap-4"
-                        itemScope
-                        itemType="https://schema.org/Service"
-                    >
+                {services.map((service, index) => (
+                    <FadeIn key={service.id} delay={400 + index * 150} direction="up">
+                        <div
+                            className="card w-full h-full rounded-4xl p-6 md:p-8 flex flex-col gap-4"
+                            itemScope
+                            itemType="https://schema.org/Service"
+                        >
                         <div className="flex items-start gap-4">
                             <div className="w-16 card h-16 p-2 rounded-full relative border flex items-center justify-center flex-shrink-0">
                                 <div className="absolute left-[-1.5rem] md:left-[-2rem] top-1/2 -translate-y-1/2 -ml-3 h-15 w-3 bg-primary shadow-[0_0_20px_rgba(255,94,24,0.8)] tag-trapezoid rotate-180" />
@@ -170,24 +175,25 @@ const Services = ({ className }: ServicesProps) => {
                             ))}
                         </ul>
 
-                        <div className="mt-auto pt-4">
-                            <Button
-                                variant="glass"
-                                size="lg"
-                                className="w-full rounded-full"
-                                onClick={() => {
-                                    window.open("https://t.me/intflow", "_blank");
-                                }}
-                            >
-                                <span className="flex items-center justify-center gap-2">
-                                    <Icon name="telegram" />
-                                    <Typography variant="body" color="accent">
-                                        Связаться
-                                    </Typography>
-                                </span>
-                            </Button>
+                            <div className="mt-auto pt-4">
+                                <Button
+                                    variant="glass"
+                                    size="lg"
+                                    className="w-full rounded-full"
+                                    onClick={() => {
+                                        window.open("https://t.me/intflow", "_blank");
+                                    }}
+                                >
+                                    <span className="flex items-center justify-center gap-2">
+                                        <Icon name="telegram" />
+                                        <Typography variant="body" color="accent">
+                                            Связаться
+                                        </Typography>
+                                    </span>
+                                </Button>
+                            </div>
                         </div>
-                    </div>
+                    </FadeIn>
                 ))}
             </div>
         </section>

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Typography } from "@/shared/ui/Typography";
 import {
@@ -9,6 +10,7 @@ import {
 import { cn } from "@/shared/lib/utils";
 import { Spacing } from "@/shared/ui/Spacing";
 import Title from "../Title/Title";
+import { FadeIn } from "@/shared/ui/FadeIn";
 
 const faqData = [
     {
@@ -112,24 +114,29 @@ export const FAQ: React.FC<FAQProps> = ({ className }) => {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
             />
 
-            <div className="w-full flex justify-center">
-                <Title>Частые вопросы</Title>
-            </div>
+            <FadeIn>
+                <div className="w-full flex justify-center">
+                    <Title>Частые вопросы</Title>
+                </div>
+            </FadeIn>
 
             <Spacing size="xl" direction="vertical" />
 
-            <Typography
-                color="accent"
-                className="text-center text-2xl"
-                variant="h2"
-            >
-                Ответы на популярные вопросы
-            </Typography>
+            <FadeIn delay={200}>
+                <Typography
+                    color="accent"
+                    className="text-center text-2xl"
+                    variant="h2"
+                >
+                    Ответы на популярные вопросы
+                </Typography>
+            </FadeIn>
 
             <Spacing size="2xl" direction="vertical" />
 
-            <div className="w-full mx-auto">
-                <Accordion type="multiple" className="w-full">
+            <FadeIn delay={400}>
+                <div className="w-full mx-auto">
+                    <Accordion type="multiple" className="w-full">
                     {faqData.map((item, index) => (
                         <AccordionItem
                             key={item.id}
@@ -157,9 +164,10 @@ export const FAQ: React.FC<FAQProps> = ({ className }) => {
                                 </Typography>
                             </AccordionContent>
                         </AccordionItem>
-                    ))}
-                </Accordion>
-            </div>
+                        ))}
+                    </Accordion>
+                </div>
+            </FadeIn>
         </section>
     );
 };
