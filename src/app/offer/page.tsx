@@ -42,7 +42,7 @@ export default function OfferPage() {
             </Typography>
             <div className="space-y-3">
               <Typography variant="body" className="text-foreground leading-relaxed">
-                <strong className="text-accent">2.1.</strong> Исполнитель обязуется оказать услуги по разработке веб-сайтов, разработке программного обеспечения и его тестированию, работам и услугам по графическому дизайну, настройке ПК и консультированию, а Заказчик — принять и оплатить их.
+                <strong className="text-accent">2.1.</strong> Исполнитель обязуется оказать услуги по разработке веб-сайтов, разработке программного обеспечения и его тестированию, работам и услугам по графическому дизайну и консультированию, а Заказчик — принять и оплатить их.
               </Typography>
               <Typography variant="body" className="text-foreground leading-relaxed">
                 <strong className="text-accent">2.2.</strong> Конкретный перечень услуг, сроки и стоимость согласовываются сторонами через электронную почту, мессенджеры или указываются в выставленном счете (инвойсе).

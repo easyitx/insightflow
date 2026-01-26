@@ -12,23 +12,20 @@ import BgFilter from "@/widgets/BgFilter/BgFilter";
 const keywords = [
     "разработка ПО",
     "разработка веб-сайтов",
-    "настройка ПК",
     "консультирование по разработке",
     "веб-разработка",
     "программирование",
     "создание сайтов",
     "техническая поддержка",
     "IT консультации",
-    "разработка программного обеспечения",
-    "настройка компьютера",
-    "техническое обслуживание ПК"
+    "разработка программного обеспечения"
 ];
 
 const websiteStructuredData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "InsightFlow - Разработка ПО и веб-сайтов",
-    "description": "Профессиональные услуги по разработке программного обеспечения, созданию веб-сайтов, настройке ПК и техническому консультированию.",
+    "description": "Профессиональные услуги по разработке программного обеспечения, созданию веб-сайтов и техническому консультированию.",
     "url": "https://insightflow.ru",
     "potentialAction": {
         "@type": "SearchAction",
@@ -52,10 +49,10 @@ export const metadata: Metadata = {
         process.env.NEXT_PUBLIC_SITE_URL ?? "https://insightflow.ru"
     ),
     title: {
-        default: "InsightFlow — Разработка ПО и веб-сайтов | Настройка ПК | IT Консультирование",
+        default: "InsightFlow — Разработка ПО и веб-сайтов | IT Консультирование",
         template: "%s | InsightFlow",
     },
-    description: "InsightFlow — профессиональные услуги по разработке программного обеспечения, созданию веб-сайтов, настройке ПК и техническому консультированию. Индивидуальный подход к каждому проекту.",
+    description: "InsightFlow — профессиональные услуги по разработке программного обеспечения, созданию веб-сайтов и техническому консультированию. Индивидуальный подход к каждому проекту.",
     keywords: keywords.join(", "),
     alternates: {
         canonical: "/",
@@ -67,8 +64,8 @@ export const metadata: Metadata = {
         type: "website",
         locale: "ru_RU",
         siteName: "InsightFlow",
-        title: "InsightFlow — Разработка ПО и веб-сайтов | Настройка ПК | IT Консультирование",
-        description: "Профессиональные услуги по разработке программного обеспечения, созданию веб-сайтов, настройке ПК и техническому консультированию.",
+        title: "InsightFlow — Разработка ПО и веб-сайтов | IT Консультирование",
+        description: "Профессиональные услуги по разработке программного обеспечения, созданию веб-сайтов и техническому консультированию.",
         url: "https://insightflow.ru",
         images: [
             {
@@ -82,7 +79,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "InsightFlow — Разработка ПО и веб-сайтов | Настройка ПК",
+        title: "InsightFlow — Разработка ПО и веб-сайтов",
         description: "Профессиональные услуги по разработке программного обеспечения, созданию веб-сайтов, настройке ПК и техническому консультированию.",
         images: ["https://insightflow.ru/og.png"],
     },
@@ -121,7 +118,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <html lang="ru" dir="ltr" itemScope itemType="https://schema.org/WebPage">
         <head>
 
-            <link type="image/x-icon" rel="shortcut icon" href="./favicon.ico"/>
+            <link type="image/svg+xml" rel="icon" href="/favicon.svg"/>
 
             <link type="image/png" sizes="16x16" rel="icon" href="/icons/favicon-16x16.png"/>
             <link type="image/png" sizes="32x32" rel="icon" href="/icons/favicon-32x32.png"/>
