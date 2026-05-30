@@ -30,7 +30,7 @@ export default function OfferPage() {
               1. Общие положения
             </Typography>
             <Typography variant="body" className="text-foreground leading-relaxed">
-              Настоящий документ является публичной офертой физического лица, применяющего специальный налоговый режим «Налог на профессиональный доход» (далее — Исполнитель). Исполнитель предлагает любому физическому или юридическому лицу (далее — Заказчик) заключить договор на оказание IT-услуг.
+              Настоящий документ является публичной офертой самозанятого лица (далее — Исполнитель). Исполнитель предлагает любому физическому или юридическому лицу (далее — Заказчик) заключить договор на оказание IT-услуг.
             </Typography>
           </section>
 
@@ -120,7 +120,7 @@ export default function OfferPage() {
             </Typography>
             <div className="card bg-background-card-hover p-4 space-y-3">
               <Typography variant="body" className="text-foreground">
-                <strong className="text-accent">Исполнитель:</strong> Физическое лицо, применяющее специальный налоговый режим «Налог на профессиональный доход»
+                <strong className="text-accent">Исполнитель:</strong> Самозанятое лицо
               </Typography>
               <Typography variant="body" className="text-foreground">
                 <strong className="text-accent">УНП:</strong> СЕ6637580

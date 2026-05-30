@@ -14,7 +14,7 @@ const energyRentalStructuredData = {
     "description": "Покупка и аренда энергии TRON для снижения комиссий при транзакциях USDT в сети TRON. Экономия до 80% на комиссиях.",
     "provider": {
         "@type": "Organization",
-        "name": "TRONERGY"
+        "name": "itvh.dev"
     },
     "areaServed": "Россия и СНГ",
     "serviceType": "Криптовалютные услуги"

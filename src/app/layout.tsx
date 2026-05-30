@@ -3,7 +3,7 @@ import "./globals.css";
 import React from "react";
 import Header from "@/widgets/Header/Header";
 import { cn } from "@/shared/lib/utils";
-import { interTight } from "@/shared/lib/fonts";
+import { golosText } from "@/shared/lib/fonts";
 import Footer from "@/widgets/Footer/Footer";
 import { Spacing } from "@/shared/ui/Spacing";
 import { AppProvider } from "./providers";
@@ -24,12 +24,12 @@ const keywords = [
 const websiteStructuredData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "InsightFlow - Разработка ПО и веб-сайтов",
+    "name": "itvh.dev - Разработка ПО и веб-сайтов",
     "description": "Профессиональные услуги по разработке программного обеспечения, созданию веб-сайтов и техническому консультированию.",
-    "url": "https://insightflow.ru",
+    "url": "https://itvh.dev",
     "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://insightflow.ru/search?q={search_term_string}",
+        "target": "https://itvh.dev/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
     }
 };
@@ -37,22 +37,22 @@ const websiteStructuredData = {
 const organizationStructuredData = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "InsightFlow - Разработчик ПО и веб-сайтов",
+    "name": "itvh.dev - Разработчик ПО и веб-сайтов",
     "description": "Профессиональные услуги по разработке программного обеспечения, созданию веб-сайтов, настройке ПК и техническому консультированию",
-    "url": "https://insightflow.ru",
+    "url": "https://itvh.dev",
     "jobTitle": "Разработчик ПО и веб-разработчик",
     "sameAs": []
 };
 
 export const metadata: Metadata = {
     metadataBase: new URL(
-        process.env.NEXT_PUBLIC_SITE_URL ?? "https://insightflow.ru"
+        process.env.NEXT_PUBLIC_SITE_URL ?? "https://itvh.dev"
     ),
     title: {
-        default: "InsightFlow — Разработка ПО и веб-сайтов | IT Консультирование",
-        template: "%s | InsightFlow",
+        default: "itvh.dev — Разработка ПО и веб-сайтов | IT Консультирование",
+        template: "%s | itvh.dev",
     },
-    description: "InsightFlow — профессиональные услуги по разработке программного обеспечения, созданию веб-сайтов и техническому консультированию. Индивидуальный подход к каждому проекту.",
+    description: "itvh.dev — профессиональные услуги по разработке программного обеспечения, созданию веб-сайтов и техническому консультированию. Индивидуальный подход к каждому проекту.",
     keywords: keywords.join(", "),
     alternates: {
         canonical: "/",
@@ -63,25 +63,25 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         locale: "ru_RU",
-        siteName: "InsightFlow",
-        title: "InsightFlow — Разработка ПО и веб-сайтов | IT Консультирование",
+        siteName: "itvh.dev",
+        title: "itvh.dev — Разработка ПО и веб-сайтов | IT Консультирование",
         description: "Профессиональные услуги по разработке программного обеспечения, созданию веб-сайтов и техническому консультированию.",
-        url: "https://insightflow.ru",
+        url: "https://itvh.dev",
         images: [
             {
-                url: "https://insightflow.ru/og.png",
+                url: "https://itvh.dev/og.png",
                 width: 1200,
                 height: 630,
-                alt: "InsightFlow - Профессиональные IT услуги",
+                alt: "itvh.dev - Профессиональные IT услуги",
                 type: "image/png"
             }
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "InsightFlow — Разработка ПО и веб-сайтов",
+        title: "itvh.dev — Разработка ПО и веб-сайтов",
         description: "Профессиональные услуги по разработке программного обеспечения, созданию веб-сайтов, настройке ПК и техническому консультированию.",
-        images: ["https://insightflow.ru/og.png"],
+        images: ["https://itvh.dev/og.png"],
     },
     robots: {
         index: true,
@@ -148,12 +148,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <meta name="msapplication-square150x150logo" content="./mstile-150x150.png"/>
             <meta name="msapplication-wide310x150logo" content="./mstile-310x310.png"/>
             <meta name="msapplication-square310x310logo" content="./mstile-310x150.png"/>
-            <meta name="application-name" content="InsightFlow"/>
+            <meta name="application-name" content="itvh.dev"/>
             <meta name="msapplication-config" content="./browserconfig.xml"/>
 
         </head>
 
-        <body className={cn("pt-6 m-0", interTight.variable)}>
+        <body className={cn("pt-6 m-0 font-sans antialiased", golosText.variable)}>
 
         <script
             type="application/ld+json"

@@ -17,7 +17,8 @@ export default function Logo() {
         <path d="M219.181 401.808L219.183 31.4448L219.185 31.4445C219.183 31.4448 295.185 195.687 295.185 195.687L439.134 188.507L219.181 401.808Z" fill="#FF5E18"/>
       </svg>
       <Typography variant="h1" className="text-accent text-lg md:text-xl font-bold">
-        InsightFlow
+        it<span className="text-primary">vh</span>
+        <span className="text-sm md:text-base">.dev</span>
       </Typography>
     </Link>
   );

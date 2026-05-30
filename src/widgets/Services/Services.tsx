@@ -11,15 +11,15 @@ import { FadeIn } from "@/shared/ui/FadeIn";
 const servicesStructuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "InsightFlow - Разработка ПО и веб-сайтов",
+    "name": "itvh.dev - Разработка ПО и веб-сайтов",
     "description": "Профессиональные услуги по разработке программного обеспечения, созданию веб-сайтов и техническому консультированию",
     "provider": {
         "@type": "Person",
-        "name": "InsightFlow"
+        "name": "itvh.dev"
     },
     "areaServed": "Россия и СНГ",
     "serviceType": "IT услуги",
-    "url": "https://insightflow.ru"
+    "url": "https://itvh.dev"
 }
 
 interface ServiceItem {
