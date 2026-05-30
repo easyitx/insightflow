@@ -6,7 +6,7 @@ import Logo from "@/widgets/Logo/Logo";
 
 import Button from "@/shared/ui/Button/Button";
 import { Typography } from "@/shared/ui/Typography";
-import { TELEGRAM_URL } from "@/shared/config/seo";
+import { TELEGRAM_URL, YEARS_OF_EXPERIENCE } from "@/shared/config/seo";
 
 const Footer = ({ className }: { className?: string }) => {
   return (
@@ -19,9 +19,11 @@ const Footer = ({ className }: { className?: string }) => {
 
           <Typography variant="body" className="text-center max-w-xl leading-relaxed">
             Разработка сайтов, веб-приложений и ПО на заказ.
-            Работаю напрямую — без менеджеров и наценки IT-студии.
+            Более {YEARS_OF_EXPERIENCE} лет опыта — работаю напрямую, без менеджеров и наценки IT-студии.
             <br />
             Бесплатная консультация по вашему проекту.
+            <br />
+            Портфолио — по запросу в Telegram.
           </Typography>
 
           <Typography variant="body" className="text-center text-foreground/70 text-sm">

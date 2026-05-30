@@ -6,6 +6,7 @@ import { Typography } from "@/shared/ui/Typography";
 import Title from "../Title/Title";
 import { Spacing } from "@/shared/ui/Spacing";
 import { FadeIn } from "@/shared/ui/FadeIn";
+import { YEARS_OF_EXPERIENCE } from "@/shared/config/seo";
 
 type WhyChooseUsItem = {
   title: string;
@@ -65,8 +66,8 @@ export const WhyChooseUs = ({
           className="text-foreground text-center max-w-2xl mx-auto leading-relaxed"
         >
           IT-студии продают процесс: менеджеры, отделы, накладные расходы.
-          Здесь — прямая работа с разработчиком: быстрее, прозрачнее и без
-          лишних звеньев между вами и результатом.
+          Здесь — прямая работа с разработчиком с опытом более {YEARS_OF_EXPERIENCE} лет:
+          быстрее, прозрачнее и без лишних звеньев между вами и результатом.
         </Typography>
       </FadeIn>
       <Spacing size="xl" direction="vertical" />

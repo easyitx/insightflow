@@ -4,10 +4,9 @@ import Title from "../Title/Title";
 import { Typography } from "@/shared/ui/Typography";
 import { Spacing } from "@/shared/ui/Spacing";
 import { Icon } from "@/shared/ui/Icon/Icon";
-import { cn } from "@/shared/lib/utils";
 import Button from "@/shared/ui/Button/Button";
 import { FadeIn } from "@/shared/ui/FadeIn";
-import { SITE_URL, TELEGRAM_URL } from "@/shared/config/seo";
+import { SITE_URL, TELEGRAM_URL, YEARS_OF_EXPERIENCE } from "@/shared/config/seo";
 
 const servicesStructuredData = {
     "@context": "https://schema.org",
@@ -111,6 +110,9 @@ const Services = ({ className }: ServicesProps) => {
             <FadeIn delay={200}>
                 <div className="flex flex-col gap-4">
                     <header className="flex flex-col gap-3 text-center max-w-3xl mx-auto">
+                        <span className="inline-flex self-center items-center rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
+                            {YEARS_OF_EXPERIENCE}+ лет опыта в разработке
+                        </span>
                         <Typography
                             variant="h1"
                             className="text-accent text-2xl md:text-4xl font-semibold leading-tight"
@@ -123,7 +125,23 @@ const Services = ({ className }: ServicesProps) => {
                         >
                             Создаю сайты, веб-приложения и программное обеспечение
                             напрямую — без менеджеров и переплат IT-студии.
-                            React, Next.js, TypeScript. Работаю с клиентами по всей России.
+                            React, Next.js, TypeScript. Более {YEARS_OF_EXPERIENCE} лет в разработке.
+                            Работаю с клиентами по всей России.
+                        </Typography>
+                        <Typography
+                            variant="body"
+                            className="text-foreground/80 text-sm md:text-base"
+                        >
+                            Портфолио с примерами работ — по запросу в{" "}
+                            <a
+                                href={TELEGRAM_URL}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-primary hover:underline"
+                            >
+                                Telegram
+                            </a>
+                            .
                         </Typography>
                     </header>
                 </div>

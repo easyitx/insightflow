@@ -6,7 +6,7 @@ import Button from "@/shared/ui/Button/Button";
 import { Icon } from "@/shared/ui/Icon/Icon";
 import { FadeIn } from "@/shared/ui/FadeIn";
 import { cn } from "@/shared/lib/utils";
-import { TELEGRAM_URL } from "@/shared/config/seo";
+import { TELEGRAM_URL, YEARS_OF_EXPERIENCE } from "@/shared/config/seo";
 
 export function ContactCta({ className }: { className?: string }) {
   return (
@@ -27,7 +27,9 @@ export function ContactCta({ className }: { className?: string }) {
           <Spacing size="md" direction="vertical" />
           <Typography variant="body" className="text-foreground leading-relaxed">
             Опишите задачу в Telegram — отвечу в течение нескольких часов.
-            Бесплатная консультация, оценка сроков и стоимости без обязательств.
+            Более {YEARS_OF_EXPERIENCE} лет в разработке: бесплатная консультация,
+            оценка сроков и стоимости без обязательств.
+            Портфолио с примерами работ — по запросу в Telegram.
           </Typography>
           <Spacing size="xl" direction="vertical" />
           <Button

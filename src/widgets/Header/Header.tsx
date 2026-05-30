@@ -35,15 +35,6 @@ const Header = ({ className }: { className?: string }) => {
           </Typography>
         </span>
       </Button>
-      {/* <Button
-        variant="ghost"
-        size="lg"
-        onClick={openMobileMenu}
-        className="md:hidden"
-        aria-label="Toggle mobile menu"
-      >
-        <Icon name="menu" className="text-foreground" size={24} />
-      </Button> */}
     </header>
   );
 };

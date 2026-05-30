@@ -2,7 +2,6 @@
 import React from "react";
 import { Typography } from "@/shared/ui/Typography";
 import { Spacing } from "@/shared/ui/Spacing";
-import { cn } from "@/shared/lib/utils";
 import Title from "@/widgets/Title/Title";
 import Button from "@/shared/ui/Button/Button";
 import Link from "next/link";

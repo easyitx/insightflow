@@ -7,6 +7,8 @@ export const SITE_NAME = "itvh.dev";
 
 export const TELEGRAM_URL = "https://t.me/intflow";
 
+export const YEARS_OF_EXPERIENCE = 10;
+
 export const SEO_KEYWORDS = [
   "разработка сайтов на заказ",
   "заказать сайт",
@@ -29,7 +31,7 @@ export const SEO_KEYWORDS = [
 ];
 
 export const DEFAULT_DESCRIPTION =
-  "Закажите разработку сайта, веб-приложения или ПО напрямую у разработчика. Без менеджеров и наценки IT-студии. Бесплатная консультация, прозрачные сроки и цены. Напишите в Telegram.";
+  "Закажите разработку сайта, веб-приложения или ПО напрямую у разработчика с опытом более 10 лет. Без менеджеров и наценки IT-студии. Бесплатная консультация, прозрачные сроки и цены. Напишите в Telegram.";
 
 export const DEFAULT_TITLE =
   "Разработка сайтов и ПО на заказ — без переплат IT-студии";
@@ -137,7 +139,7 @@ export function getOrganizationSchema() {
     "@id": `${SITE_URL}/#organization`,
     name: SITE_NAME,
     url: SITE_URL,
-    description: DEFAULT_DESCRIPTION,
+    description: `${DEFAULT_DESCRIPTION} Опыт разработки — более ${YEARS_OF_EXPERIENCE} лет.`,
     image: `${SITE_URL}/og.png`,
     priceRange: "$$",
     areaServed: {
