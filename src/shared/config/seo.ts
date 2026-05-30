@@ -142,15 +142,7 @@ export function getOrganizationSchema() {
     description: `${DEFAULT_DESCRIPTION} Опыт разработки — более ${YEARS_OF_EXPERIENCE} лет.`,
     image: `${SITE_URL}/og.png`,
     priceRange: "$$",
-    areaServed: {
-      "@type": "GeoCircle",
-      geoMidpoint: {
-        "@type": "GeoCoordinates",
-        latitude: 55.7558,
-        longitude: 37.6173,
-      },
-      geoRadius: "5000000",
-    },
+    areaServed: "Worldwide",
     serviceType: [
       "Разработка веб-сайтов",
       "Разработка программного обеспечения",
@@ -231,7 +223,7 @@ export function getServicesSchema() {
         provider: {
           "@id": `${SITE_URL}/#organization`,
         },
-        areaServed: "RU",
+        areaServed: "Worldwide",
         url: SITE_URL,
       },
     })),

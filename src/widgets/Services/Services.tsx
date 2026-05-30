@@ -18,7 +18,7 @@ const servicesStructuredData = {
         "name": "itvh.dev",
         "url": SITE_URL
     },
-    "areaServed": "RU",
+    "areaServed": "Worldwide",
     "serviceType": "IT услуги",
     "url": SITE_URL
 }
@@ -126,7 +126,7 @@ const Services = ({ className }: ServicesProps) => {
                             Создаю сайты, веб-приложения и программное обеспечение
                             напрямую — без менеджеров и переплат IT-студии.
                             React, Next.js, TypeScript. Более {YEARS_OF_EXPERIENCE} лет в разработке.
-                            Работаю с клиентами по всей России.
+                            Работаю с клиентами по всему миру.
                         </Typography>
                         <Typography
                             variant="body"
