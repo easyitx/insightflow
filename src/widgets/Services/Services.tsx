@@ -7,19 +7,21 @@ import { Icon } from "@/shared/ui/Icon/Icon";
 import { cn } from "@/shared/lib/utils";
 import Button from "@/shared/ui/Button/Button";
 import { FadeIn } from "@/shared/ui/FadeIn";
+import { SITE_URL, TELEGRAM_URL } from "@/shared/config/seo";
 
 const servicesStructuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "itvh.dev - Разработка ПО и веб-сайтов",
-    "description": "Профессиональные услуги по разработке программного обеспечения, созданию веб-сайтов и техническому консультированию",
+    "name": "Разработка сайтов и ПО на заказ",
+    "description": "Разработка веб-сайтов, веб-приложений и программного обеспечения на заказ. Работа напрямую с разработчиком без наценки IT-студии.",
     "provider": {
-        "@type": "Person",
-        "name": "itvh.dev"
+        "@type": "ProfessionalService",
+        "name": "itvh.dev",
+        "url": SITE_URL
     },
-    "areaServed": "Россия и СНГ",
+    "areaServed": "RU",
     "serviceType": "IT услуги",
-    "url": "https://itvh.dev"
+    "url": SITE_URL
 }
 
 interface ServiceItem {
@@ -34,7 +36,7 @@ const services: ServiceItem[] = [
     {
         id: "software-development",
         title: "Разработка ПО",
-        description: "Создание программного обеспечения под ваши задачи. От настольных приложений до сложных систем управления.",
+        description: "Разработка программного обеспечения на заказ: настольные приложения, автоматизация и бизнес-системы под ваши задачи.",
         features: [
             "Индивидуальный подход к каждому проекту",
             "Современные технологии и методологии",
@@ -46,7 +48,7 @@ const services: ServiceItem[] = [
     {
         id: "web-development",
         title: "Разработка веб-сайтов",
-        description: "Создание современных веб-сайтов и веб-приложений. От лендингов до сложных интернет-магазинов и корпоративных порталов.",
+        description: "Создание сайтов под ключ: лендинги, корпоративные сайты и интернет-магазины на React и Next.js с SEO и адаптивным дизайном.",
         features: [
             "Адаптивный дизайн",
             "Оптимизация производительности",
@@ -108,20 +110,20 @@ const Services = ({ className }: ServicesProps) => {
 
             <FadeIn delay={200}>
                 <div className="flex flex-col gap-4">
-                    <header className="flex flex-col gap-2 text-center">
+                    <header className="flex flex-col gap-3 text-center max-w-3xl mx-auto">
                         <Typography
                             variant="h1"
-                            className="text-accent text-2xl font-medium"
+                            className="text-accent text-2xl md:text-4xl font-semibold leading-tight"
                         >
-                            Профессиональные IT услуги
+                            Разработка сайтов и ПО на заказ
                         </Typography>
                         <Typography
-                            variant="h2"
-                            className="text-foreground text-lg font-normal"
+                            variant="body"
+                            className="text-foreground text-base md:text-lg leading-relaxed"
                         >
-                            Разработка ПО, создание веб-сайтов и техническое консультирование
-                            <br />
-                            <strong>Индивидуальный подход к каждому проекту</strong>
+                            Создаю сайты, веб-приложения и программное обеспечение
+                            напрямую — без менеджеров и переплат IT-студии.
+                            React, Next.js, TypeScript. Работаю с клиентами по всей России.
                         </Typography>
                     </header>
                 </div>
@@ -181,7 +183,7 @@ const Services = ({ className }: ServicesProps) => {
                                     size="lg"
                                     className="w-full rounded-full"
                                     onClick={() => {
-                                        window.open("https://t.me/intflow", "_blank");
+                                        window.open(TELEGRAM_URL, "_blank");
                                     }}
                                 >
                                     <span className="flex items-center justify-center gap-2">

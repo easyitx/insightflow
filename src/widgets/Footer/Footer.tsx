@@ -6,6 +6,7 @@ import Logo from "@/widgets/Logo/Logo";
 
 import Button from "@/shared/ui/Button/Button";
 import { Typography } from "@/shared/ui/Typography";
+import { TELEGRAM_URL } from "@/shared/config/seo";
 
 const Footer = ({ className }: { className?: string }) => {
   return (
@@ -16,10 +17,11 @@ const Footer = ({ className }: { className?: string }) => {
             <Logo />
           </div>
 
-          <Typography variant="body" className="text-center">
-            Профессиональные IT услуги: разработка ПО, создание веб-сайтов и консультирование.
-            <br /> Индивидуальный подход к каждому проекту.
-            <br /> Свяжитесь со мной, и мы обсудим ваши задачи.
+          <Typography variant="body" className="text-center max-w-xl leading-relaxed">
+            Разработка сайтов, веб-приложений и ПО на заказ.
+            Работаю напрямую — без менеджеров и наценки IT-студии.
+            <br />
+            Бесплатная консультация по вашему проекту.
           </Typography>
 
           <Typography variant="body" className="text-center text-foreground/70 text-sm">
@@ -37,7 +39,7 @@ const Footer = ({ className }: { className?: string }) => {
                 variant="icon" 
                 size="lg"
                 onClick={() => {
-                  window.open("https://t.me/intflow", "_blank");
+                  window.open(TELEGRAM_URL, "_blank");
                 }}
                 aria-label="Telegram"
               >

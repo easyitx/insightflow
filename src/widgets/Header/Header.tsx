@@ -6,6 +6,7 @@ import Button from "@/shared/ui/Button/Button";
 import { Icon } from "@/shared/ui/Icon/Icon";
 import { cn } from "@/shared/lib/utils";
 import { Typography } from "@/shared/ui/Typography/Typography";
+import { TELEGRAM_URL } from "@/shared/config/seo";
 
 const Header = ({ className }: { className?: string }) => {
   return (
@@ -24,7 +25,7 @@ const Header = ({ className }: { className?: string }) => {
         size="lg" 
         className="rounded-full"
         onClick={() => {
-          window.open("https://t.me/intflow", "_blank");
+          window.open(TELEGRAM_URL, "_blank");
         }}
       >
         <span className=" flex items-center gap-5">
